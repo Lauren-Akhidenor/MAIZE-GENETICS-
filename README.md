@@ -1,10 +1,10 @@
-# Maize Variety Adoption & Agronomic Practices in Embu, Kenya (Power BI)
+# Visualizing Maize Variety Adoption & Agronomic Practices in Embu, Kenya
 
 This project analyzes maize variety adoption and agronomic practices among farmers in **Embu, Kenya** using **Microsoft Power BI**. It converts survey data into a clean, optimized data model and interactive dashboards to answer key business questions around varieties, inputs, constraints, and training effectiveness.
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 - Build an **optimized data model** (star schema) for performance and clarity.
 - Create **interactive Power BI reports** answering core questions on adoption and practices.
 - Quantify the role of **training/extension** in technology uptake.
@@ -12,23 +12,23 @@ This project analyzes maize variety adoption and agronomic practices among farme
 
 ---
 
-## 🛠️ Data Modeling Approach
+## Data Modeling Approach
 A **Star Schema** was used for efficient slicing and aggregation.
 
-**🔶 Dimension Tables**
+**Dimension Tables**
 - `Farmer_Dim`: `HouseholdID`, `Gender`, `County`
 - `Variety_Dim`: `VarietyID`, `VarietyName`, `Type`
 - `Training_Dim`: `TrainingSourceID`, `SourceName`
 - `Practice_Dim`: `PracticeID`, `PracticeName`
 
-**🔷 Fact Table**
+**Fact Table**
 - `Adoption_Fact`: `HouseholdID`, `VarietyID`, `PracticeID`, `TrainingSourceID`, constraint flags (e.g., `HighCost`, `PestsDiseases`, etc.)
 
 This design reduces redundancy, simplifies DAX, and speeds up visuals.
 
 ---
 
-## 📊 Dashboards & Key Visuals
+## Dashboards & Key Visuals
 - **Socio-economic profile** (gender, age, education, household size, land tenure)
 - **Training reach & sources** (extension, NGOs, agro-dealers, media, peers)
 - **Land use** (maize land ratio, availability)
@@ -39,7 +39,7 @@ This design reduces redundancy, simplifies DAX, and speeds up visuals.
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 - ![Screenshot 974](Screenshot%20(974).png)
 - ![Screenshot 975](Screenshot%20(975).png)
 - ![Screenshot 976](Screenshot%20(976).png)
@@ -47,9 +47,9 @@ This design reduces redundancy, simplifies DAX, and speeds up visuals.
 
 ---
 
-## 📊 Findings: Visualizing Maize Variety Adoption and Agronomic Practices in Embu, Kenya
+## Findings: Visualizing Maize Variety Adoption and Agronomic Practices in Embu, Kenya
 
-### 1️⃣ Socio-economic Dashboard
+### 1️Socio-economic Dashboard
 - **Total Farmers by Gender of Household Head**
   - Male-headed households: **117 (78.52%)**
   - Female-headed households: **32 (21.48%)**
@@ -95,7 +95,7 @@ This design reduces redundancy, simplifies DAX, and speeds up visuals.
 - **Tillage Methods:** Ploughing and minimum tillage dominant.
 - **Weeding Methods:** Hand weeding most common, with some use of herbicides or other methods.
 
-### ✅ Observations
+### Observations
 - Male-headed households dominate maize production in Embu.
 - Training significantly influences adoption of improved varieties and input use.
 - Improved maize varieties (especially **H6213** and **H513**) are widely adopted.
@@ -105,7 +105,7 @@ This design reduces redundancy, simplifies DAX, and speeds up visuals.
 
 ---
 
-## ✅ Recommendations
+## Recommendations
 1. **Targeted input support:** Consider seed/fertilizer vouchers or seasonal subsidies to ease **high input cost** constraints.
 2. **Scale up extension & peer learning:** Expand **extension officer** outreach and structured **farmer-to-farmer** trainings; prioritize practical demos on fertilizer timing and crop protection.
 3. **Promote resilient varieties:** Emphasize improved, locally adapted varieties (e.g., drought/pest-tolerant) with verified certification channels.
